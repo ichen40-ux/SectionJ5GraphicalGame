@@ -746,6 +746,94 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "TopDownGame_Background_StoneAge_V1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TopDownGame_Background_StoneAge_V1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Red bar2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Red bar",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "PlayerFrame1Stage1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "PlayerFrame1Stage1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "EnemyFrame1Stage1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "EnemyFrame1Stage1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Stage1Weapon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Stage1Weapon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "EnvironmentAssets_Background_MedievalAge_V1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "EnvironmentAssets_Background_MedievalAge_V1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Stage1Weapon2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Stage1Weapon2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Stage1Bullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Stage1Bullet.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Stage1Bullet2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Stage1Bullet2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "RestartButton.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RestartButton.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "RestartButton2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RestartButton2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -777,7 +865,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.30104611971824996,
+        "zoomFactor": 0.36732575450588817,
         "windowMask": false,
         "selectedLayer": "UI"
       },
@@ -850,7 +938,7 @@
           "height": 752,
           "keepRatio": true,
           "layer": "Background",
-          "name": "Dirt",
+          "name": "BG0",
           "persistentUuid": "0a78619d-13f0-42e8-b886-e84aa47276b8",
           "width": 1322,
           "x": -23,
@@ -989,8 +1077,8 @@
           "name": "Transition",
           "persistentUuid": "b209afed-5907-4bc2-a123-6f2eb3afae0e",
           "width": 1399,
-          "x": -37,
-          "y": -51,
+          "x": -46,
+          "y": -36,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -1004,11 +1092,46 @@
           "keepRatio": true,
           "layer": "UI",
           "name": "Quote",
+          "opacity": 0,
           "persistentUuid": "a062f9bb-3002-4313-b5ff-b2a2b89b87b1",
           "width": 512,
           "x": 369,
           "y": 308,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 802,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "BG1",
+          "persistentUuid": "bd8f38c6-1ef9-4e22-a7e7-3c81c4e24403",
+          "width": 1454,
+          "x": -59,
+          "y": -35,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 222,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Restart_Button",
+          "persistentUuid": "2a59b467-1a85-4760-9d91-dcb3f4a42975",
+          "width": 547,
+          "x": 343,
+          "y": 21,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1063,7 +1186,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Stage 0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1073,6 +1196,54 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "EnemyFrame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 112,
+                            "y": 0
+                          },
+                          {
+                            "x": 112,
+                            "y": 235
+                          },
+                          {
+                            "x": 0,
+                            "y": 235
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Stage 1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "EnemyFrame1Stage1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1129,7 +1300,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Stage 0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1175,14 +1346,62 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Stage 1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Stage1Bullet2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 273,
+                            "y": 0
+                          },
+                          {
+                            "x": 273,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
           "assetStoreId": "",
           "height": 32,
-          "name": "Dirt",
-          "texture": "MAP.png",
+          "name": "BG0",
+          "texture": "TopDownGame_Background_StoneAge_V1.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -1313,16 +1532,17 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Red bar",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Red bar.png",
+                      "image": "Red bar",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1633,7 +1853,7 @@
           ],
           "animations": [
             {
-              "name": "Blue Character 1",
+              "name": "Stage 0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1644,6 +1864,54 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "PlayerFrame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 112,
+                            "y": 0
+                          },
+                          {
+                            "x": 112,
+                            "y": 235
+                          },
+                          {
+                            "x": 0,
+                            "y": 235
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Stage 1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "PlayerFrame1Stage1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1694,7 +1962,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Stage 0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1704,6 +1972,54 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "PlayerFrameWeapon1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 274,
+                            "y": 1
+                          },
+                          {
+                            "x": 274,
+                            "y": 35
+                          },
+                          {
+                            "x": 1,
+                            "y": 35
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Stage 1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Stage1Weapon2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1760,7 +2076,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Stage 0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1770,6 +2086,54 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "PlayerFrameBullet1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 273,
+                            "y": 0
+                          },
+                          {
+                            "x": 273,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Stage 1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Stage1Bullet.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1820,7 +2184,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Stage 0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1830,6 +2194,54 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "PlayerFrameWeapon1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 274,
+                            "y": 1
+                          },
+                          {
+                            "x": 274,
+                            "y": 35
+                          },
+                          {
+                            "x": 1,
+                            "y": 35
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Stage 1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Stage1Weapon.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2172,6 +2584,82 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "BG1",
+          "texture": "EnvironmentAssets_Background_MedievalAge_V1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Restart_Button",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RestartButton2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 35,
+                            "y": 63
+                          },
+                          {
+                            "x": 961,
+                            "y": 63
+                          },
+                          {
+                            "x": 961,
+                            "y": 350
+                          },
+                          {
+                            "x": 35,
+                            "y": 350
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2210,7 +2698,10 @@
                 "folderName": "Background",
                 "children": [
                   {
-                    "objectName": "Dirt"
+                    "objectName": "BG0"
+                  },
+                  {
+                    "objectName": "BG1"
                   }
                 ]
               }
@@ -2219,6 +2710,9 @@
           {
             "folderName": "Sprites",
             "children": [
+              {
+                "objectName": "Restart_Button"
+              },
               {
                 "objectName": "TombStone"
               },
@@ -2297,7 +2791,7 @@
               "parameters": [
                 "RequiredKills",
                 "=",
-                "10"
+                "2"
               ]
             },
             {
@@ -2364,6 +2858,14 @@
                 "value": "Cache"
               },
               "parameters": [
+                "Restart_Button"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
                 "Weapon"
               ]
             },
@@ -2393,17 +2895,6 @@
             },
             {
               "type": {
-                "value": "TopDownMovementBehavior::Acceleration"
-              },
-              "parameters": [
-                "Player",
-                "TopDownMovement",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -2415,7 +2906,37 @@
                 "value": "Cache"
               },
               "parameters": [
+                "BG1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
                 "Quote"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Restart_Button",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::Acceleration"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "=",
+                "0"
               ]
             },
             {
@@ -2451,7 +2972,7 @@
                 "value": "TiledSpriteObject::XOffset"
               },
               "parameters": [
-                "Dirt",
+                "BG0",
                 "=",
                 "CameraCenterX()"
               ]
@@ -2461,7 +2982,27 @@
                 "value": "TiledSpriteObject::YOffset"
               },
               "parameters": [
-                "Dirt",
+                "BG0",
+                "=",
+                "CameraCenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "BG1",
+                "=",
+                "CameraCenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::YOffset"
+              },
+              "parameters": [
+                "BG1",
                 "=",
                 "CameraCenterY()"
               ]
@@ -3110,6 +3651,68 @@
                     },
                     {
                       "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "Animation",
+                        "=",
+                        "\"Stage 0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "Resizable",
+                        "67",
+                        "124"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy",
+                        "Player.X() + (RandomWithStep(-1, 1, 2) * SceneWindowWidth() / 2)",
+                        "Player.Y() + (RandomWithStep(-1, 1, 2) * SceneWindowHeight() / 2)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "Animation",
+                        "=",
+                        "\"Stage 1\""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "ResizableCapability::ResizableBehavior::SetSize"
                       },
                       "parameters": [
@@ -3140,58 +3743,155 @@
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "Enemy_Weapon",
-                    "Enemy.X()",
-                    "Enemy.Y()",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy_Weapon",
+                        "Enemy.X()",
+                        "Enemy.Y()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy_Weapon",
+                        "Animation",
+                        "=",
+                        "\"Stage 0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy",
+                        "Enemy_Weapon"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Enemy_Weapon",
+                        "=",
+                        "Enemy.CenterX()",
+                        "=",
+                        "Enemy.CenterY()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Enemy_Weapon",
+                        "Resizable",
+                        "134",
+                        "16"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Enemy_Weapon",
-                    "Resizable",
-                    "134",
-                    "16"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetCenter"
-                  },
-                  "parameters": [
-                    "Enemy_Weapon",
-                    "=",
-                    "Enemy.CenterX()",
-                    "=",
-                    "Enemy.CenterY()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "Enemy",
-                    "Enemy_Weapon"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy_Weapon",
+                        "Enemy.X()",
+                        "Enemy.Y()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy_Weapon",
+                        "Animation",
+                        "=",
+                        "\"Stage 1\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy",
+                        "Enemy_Weapon"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Enemy_Weapon",
+                        "=",
+                        "Enemy.CenterX()",
+                        "=",
+                        "Enemy.CenterY()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Enemy_Weapon",
+                        "Resizable",
+                        "57",
+                        "84"
+                      ]
+                    }
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             },
             {
               "type": "BuiltinCommonInstructions::ForEach",
@@ -3378,6 +4078,17 @@
                         },
                         {
                           "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Enemy_Bullet",
+                            "Animation",
+                            "=",
+                            "\"Stage 0\""
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "FireBullet::FireBullet::Fire"
                           },
                           "parameters": [
@@ -3399,6 +4110,81 @@
                             "Enemy_Bullet",
                             "Resizable",
                             "126",
+                            "18"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Stage",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "CanShoot",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy",
+                            "Enemy_Weapon",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Enemy_Bullet",
+                            "Animation",
+                            "=",
+                            "\"Stage 1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::Fire"
+                          },
+                          "parameters": [
+                            "Enemy",
+                            "FireBullet",
+                            "Enemy_Weapon.CenterX()",
+                            "Enemy_Weapon.CenterY()",
+                            "Enemy_Bullet",
+                            "Enemy_Weapon.Angle()",
+                            "350",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "Enemy_Bullet",
+                            "Resizable",
+                            "63",
                             "18"
                           ]
                         }
@@ -3431,6 +4217,35 @@
                                 "Stage",
                                 "=",
                                 "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "woosh-230554.mp3",
+                                "",
+                                "100",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "Stage",
+                                "=",
+                                "1"
                               ]
                             }
                           ],
@@ -3575,70 +4390,11 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "Stage",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "BooleanVariable"
                       },
                       "parameters": [
                         "CanShoot",
                         "True",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::Fire"
-                      },
-                      "parameters": [
-                        "Player",
-                        "FireBullet",
-                        "Weapon.CenterX()",
-                        "Weapon.CenterY()",
-                        "Bullet",
-                        "Weapon.Angle()",
-                        "400",
-                        "300"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetSize"
-                      },
-                      "parameters": [
-                        "Bullet",
-                        "Resizable",
-                        "126",
-                        "18"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::HasJustFired"
-                      },
-                      "parameters": [
-                        "Player",
-                        "FireBullet",
                         ""
                       ]
                     }
@@ -3657,19 +4413,164 @@
                             "=",
                             "0"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "value": "PlaySound"
+                            "value": "FireBullet::FireBullet::Fire"
                           },
                           "parameters": [
-                            "",
-                            "fast-woosh-230497.mp3",
-                            "",
-                            "",
+                            "Player",
+                            "FireBullet",
+                            "Weapon.CenterX()",
+                            "Weapon.CenterY()",
+                            "Bullet",
+                            "Weapon.Angle()",
+                            "400",
+                            "300"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            "Resizable",
+                            "126",
+                            "18"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Stage",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::Fire"
+                          },
+                          "parameters": [
+                            "Player",
+                            "FireBullet",
+                            "Weapon.CenterX()",
+                            "Weapon.CenterY()",
+                            "Bullet",
+                            "Weapon.Angle()",
+                            "600",
+                            "300"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "Bullet",
+                            "Resizable",
+                            "63",
+                            "18"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::HasJustFired"
+                          },
+                          "parameters": [
+                            "Player",
+                            "FireBullet",
                             ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "Stage",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "fast-woosh-230497.mp3",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "Stage",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "fast-woosh-230497.mp3",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -3702,6 +4603,16 @@
                     "Enemy",
                     "",
                     "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CanShoot",
+                    "True",
                     ""
                   ]
                 }
@@ -3740,6 +4651,35 @@
                         "Stage",
                         "=",
                         "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "angry-grunt-103204.mp3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "1"
                       ]
                     }
                   ],
@@ -3844,6 +4784,35 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "mask-grunt-sound-38713.mp3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -3931,6 +4900,35 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "mask-grunt-sound-38713.mp3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -3957,6 +4955,220 @@
                     "Health",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CanShoot",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::Acceleration"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Weapon"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "TombStone",
+                    "Player.X()",
+                    "Player.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "TombStone",
+                    "Resizable",
+                    "95",
+                    "96"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Quote",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Restart_Button",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Transition",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Restart_Button",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Quote",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "Tween",
+                    "\"TransitionOpacity\"",
+                    "255",
+                    "\"linear\"",
+                    "2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Quote",
+                    "Tween",
+                    "\"TransitionOpacity\"",
+                    "255",
+                    "\"linear\"",
+                    "2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Restart_Button",
+                    "Tween",
+                    "\"RestartButtonOpacity\"",
+                    "255",
+                    "\"linear\"",
+                    "2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Restart_Button",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Restart_Button",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ],
@@ -4134,6 +5346,174 @@
                     },
                     {
                       "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                      },
+                      "parameters": [
+                        "Red_bar",
+                        "Resizable",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Kills",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "RequiredKills",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Health",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "UI_Heart",
+                        "Animation",
+                        "=",
+                        "\"Full\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Stage 1\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "Animation",
+                        "=",
+                        "\"Stage 1\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "Resizable",
+                        "57",
+                        "84"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Resizable",
+                        "67",
+                        "124"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Bullet",
+                        "Animation",
+                        "=",
+                        "\"Stage 1\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy_Weapon"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Enemy_Weapon",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BG0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "BG1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -4157,6 +5537,26 @@
                         "0",
                         "\"linear\"",
                         "2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CanShoot",
+                        "True",
                         ""
                       ]
                     }
