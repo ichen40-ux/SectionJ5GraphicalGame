@@ -992,6 +992,56 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "musket-82280.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "musket-82280.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Heart3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Heart4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Heart5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Heart6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "HeartDeath.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "HeartDeath.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1023,9 +1073,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.22336005893811794,
+        "zoomFactor": 0.27253598967729803,
         "windowMask": false,
-        "selectedLayer": "Background"
+        "selectedLayer": "UI"
       },
       "objectsGroups": [
         {
@@ -1235,8 +1285,8 @@
           "name": "Transition",
           "persistentUuid": "b209afed-5907-4bc2-a123-6f2eb3afae0e",
           "width": 1399,
-          "x": -46,
-          "y": -36,
+          "x": -38,
+          "y": -15,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -1991,7 +2041,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Heart.png",
+                      "image": "Heart3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2007,20 +2057,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 196,
-                            "y": 170
+                            "x": 49,
+                            "y": 279
                           },
                           {
-                            "x": 791,
-                            "y": 170
+                            "x": 972,
+                            "y": 279
                           },
                           {
-                            "x": 791,
-                            "y": 796
+                            "x": 972,
+                            "y": 736
                           },
                           {
-                            "x": 196,
-                            "y": 796
+                            "x": 49,
+                            "y": 736
                           }
                         ]
                       ]
@@ -2030,7 +2080,7 @@
               ]
             },
             {
-              "name": "Half",
+              "name": "3/4",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2039,7 +2089,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Heart1.png",
+                      "image": "Heart4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2055,20 +2105,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 196,
-                            "y": 170
+                            "x": 49,
+                            "y": 279
                           },
                           {
-                            "x": 791,
-                            "y": 170
+                            "x": 972,
+                            "y": 279
                           },
                           {
-                            "x": 791,
-                            "y": 796
+                            "x": 972,
+                            "y": 736
                           },
                           {
-                            "x": 196,
-                            "y": 796
+                            "x": 49,
+                            "y": 736
                           }
                         ]
                       ]
@@ -2078,7 +2128,7 @@
               ]
             },
             {
-              "name": "Empty",
+              "name": "1/2",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2087,7 +2137,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Heart2.png",
+                      "image": "Heart5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2103,20 +2153,116 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 196,
-                            "y": 170
+                            "x": 49,
+                            "y": 279
                           },
                           {
-                            "x": 791,
-                            "y": 170
+                            "x": 972,
+                            "y": 279
                           },
                           {
-                            "x": 791,
-                            "y": 796
+                            "x": 972,
+                            "y": 736
                           },
                           {
-                            "x": 196,
-                            "y": 796
+                            "x": 49,
+                            "y": 736
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1/4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Heart6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 49,
+                            "y": 279
+                          },
+                          {
+                            "x": 972,
+                            "y": 279
+                          },
+                          {
+                            "x": 972,
+                            "y": 736
+                          },
+                          {
+                            "x": 49,
+                            "y": 736
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Death",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "HeartDeath.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 49,
+                            "y": 279
+                          },
+                          {
+                            "x": 972,
+                            "y": 279
+                          },
+                          {
+                            "x": 972,
+                            "y": 736
+                          },
+                          {
+                            "x": 49,
+                            "y": 736
                           }
                         ]
                       ]
@@ -3597,7 +3743,7 @@
               "parameters": [
                 "Health",
                 "=",
-                "2"
+                "4"
               ]
             },
             {
@@ -4460,6 +4606,16 @@
                     ">=",
                     "5"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CanShoot",
+                    "True",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -4693,6 +4849,16 @@
                     "",
                     "Enemy_Weapon",
                     "Enemy",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CanShoot",
+                    "True",
                     ""
                   ]
                 }
@@ -5092,6 +5258,62 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Enemy_Weapon",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Enemy_Weapon",
+                    "<",
+                    "-90"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Enemy_Weapon",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Enemy_Weapon",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Enemy_Weapon",
+                    ">",
+                    "-180"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Enemy_Weapon",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5136,6 +5358,16 @@
                         "350",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "CanShoot",
+                        "True",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [],
@@ -5151,16 +5383,6 @@
                             "Stage",
                             "=",
                             "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BooleanVariable"
-                          },
-                          "parameters": [
-                            "CanShoot",
-                            "True",
-                            ""
                           ]
                         }
                       ],
@@ -5227,16 +5449,6 @@
                             "=",
                             "1"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BooleanVariable"
-                          },
-                          "parameters": [
-                            "CanShoot",
-                            "True",
-                            ""
-                          ]
                         }
                       ],
                       "actions": [
@@ -5302,16 +5514,6 @@
                             "=",
                             "2"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BooleanVariable"
-                          },
-                          "parameters": [
-                            "CanShoot",
-                            "True",
-                            ""
-                          ]
                         }
                       ],
                       "actions": [
@@ -5376,16 +5578,6 @@
                             "Stage",
                             "=",
                             "3"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BooleanVariable"
-                          },
-                          "parameters": [
-                            "CanShoot",
-                            "True",
-                            ""
                           ]
                         }
                       ],
@@ -5535,7 +5727,7 @@
                               },
                               "parameters": [
                                 "",
-                                "gun-shot-1-7069.mp3",
+                                "musket-82280.mp3",
                                 "",
                                 "25",
                                 ""
@@ -5564,7 +5756,7 @@
                               },
                               "parameters": [
                                 "",
-                                "pistol-shot-233473.mp3",
+                                "gun-shot-6178.mp3",
                                 "",
                                 "25",
                                 ""
@@ -5693,6 +5885,60 @@
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Angle"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "<",
+                        "-90"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Angle"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        ">",
+                        "-180"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "Flippable",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -6022,7 +6268,7 @@
                               },
                               "parameters": [
                                 "",
-                                "gun-shot-6178.mp3",
+                                "musket-82280.mp3",
                                 "",
                                 "50",
                                 ""
@@ -7047,6 +7293,16 @@
                     },
                     {
                       "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
@@ -7198,16 +7454,6 @@
                         "\"linear\"",
                         "2",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "Stage",
-                        "=",
-                        "1"
                       ]
                     },
                     {
@@ -7366,6 +7612,16 @@
                       },
                       "parameters": [
                         "Health",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
                         "=",
                         "2"
                       ]
@@ -7527,16 +7783,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "Stage",
-                        "=",
-                        "2"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "SetBooleanVariable"
                       },
                       "parameters": [
@@ -7697,6 +7943,16 @@
                     },
                     {
                       "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Stage",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
@@ -7848,16 +8104,6 @@
                         "\"linear\"",
                         "2",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "Stage",
-                        "=",
-                        "3"
                       ]
                     },
                     {
